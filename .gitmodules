@@ -1,0 +1,12 @@
+[submodule "unique-parent-spring"]
+	path = unique-parent-spring
+	url = https://github.com/dgcorredorr/unique-parent-spring
+[submodule "ms-template-spring-webflux"]
+        path = ms-template-spring-webflux
+        url = https://github.com/dgcorredorr/ms-template-spring-webflux
+[submodule "ms-parent-spring-webflux"]
+        path = ms-parent-spring-webflux
+        url = https://github.com/dgcorredorr/ms-parent-spring-webflux
+[submodule "lib-base-spring-webflux"]
+        path = lib-base-spring-webflux
+        url = https://github.com/dgcorredorr/lib-base-spring-webflux

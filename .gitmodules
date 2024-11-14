@@ -2,9 +2,9 @@
 	path = unique-parent-spring
 	url = https://github.com/dgcorredorr/unique-parent-spring
 	branch = master
-[submodule "ms-template-spring-webflux"]
-        path = ms-template-spring-webflux
-        url = https://github.com/dgcorredorr/ms-template-spring-webflux
+[submodule "ms-quasar-fire-op"]
+        path = ms-quasar-fire-op
+        url = https://github.com/dgcorredorr/ms-quasar-fire-op
 	branch = master
 [submodule "ms-parent-spring-webflux"]
         path = ms-parent-spring-webflux

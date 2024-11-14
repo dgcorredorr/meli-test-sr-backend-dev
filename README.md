@@ -77,8 +77,9 @@ Desde la línea de comando:
     * Importar los archivos ```coll_satellite.json``` y ```coll_message.json``` en las respectivas colecciones, éstos se encuentran en la carpeta ```db-scripts``` del repositorio ```ms-quasar-fire-op```
     <p align="center">
       <span style="display:inline-block; width: 50px;"></span>
-      <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="400" /></a>
+      <a href="#" target="blank"><img src="https://github.com/user-attachments/assets/8829e72a-9908-454d-91ad-8c4ef7621df7" width="800" /></a>
     </p>
+
 
 6. Correr la aplicación en modo desarrollo
 
@@ -90,8 +91,10 @@ Desde la línea de comando:
 Swagger se utiliza para documentar y probar los endpoints del microservicio. Una vez que la aplicación esté en ejecución, se puede acceder a la interfaz de Swagger haciendo click [aquí](http://localhost:8081)
 <p align="center">
   <span style="display:inline-block; width: 50px;"></span>
-  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="400" /></a>
+  <a href="#" target="blank"><img src="https://github.com/user-attachments/assets/fbc8bdb7-85b5-48b5-a716-7635936fc18f" width="800" /></a>
 </p>
+
+
 
 ### **Monitoreo con Elastic APM desde Kibana**
 Elastic APM se integra con Kibana para proporcionar monitoreo y trazabilidad de las operaciones del microservicio. Para acceder a los datos de APM desde Kibana:
@@ -99,9 +102,15 @@ Elastic APM se integra con Kibana para proporcionar monitoreo y trazabilidad de 
 2. Navegar a la sección "APM" en el menú principal.
 3. Aquí se podrán ver las métricas y trazas de las solicitudes manejadas por el microservicio.
 
+
 <p align="center">
   <span style="display:inline-block; width: 50px;"></span>
-  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="600" alt="Rebel Alliance Logo" /></a>
+  <a href="#" target="blank"><img src="https://github.com/user-attachments/assets/74dc5a19-0d30-421a-803c-9e4f81cc5f35" width="800"/></a>
+</p>
+
+<p align="center">
+  <span style="display:inline-block; width: 50px;"></span>
+  <a href="#" target="blank"><img src="https://github.com/user-attachments/assets/90cdbee9-2c33-4f45-807c-44740c4e7e9a" width="800"/></a>
 </p>
 
 ### **Procesamiento de Logs con Logstash desde Kibana**
@@ -113,7 +122,7 @@ Logstash se utiliza para procesar y transformar los logs generados por el micros
 
 <p align="center">
   <span style="display:inline-block; width: 50px;"></span>
-  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="600" alt="Rebel Alliance Logo" /></a>
+  <a href="#" target="blank"><img src="https://github.com/user-attachments/assets/3ef03954-c1dc-4f83-aeca-d1df64644f74" width="800"/></a>
 </p>
 
 ### **Acceso a MongoDB desde MongoDB Compass**
@@ -124,7 +133,7 @@ MongoDB Compass se utiliza para gestionar y visualizar los datos almacenados en 
 
 <p align="center">
   <span style="display:inline-block; width: 50px;"></span>
-  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="600" alt="Rebel Alliance Logo" /></a>
+  <a href="#" target="blank"><img src="https://github.com/user-attachments/assets/afaabe38-82a5-4e4b-a975-a97a8c2cb6fd" width="800" /></a>
 </p>
 
 ## **Diagramas de Arquitectura Modelo C4**

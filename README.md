@@ -43,11 +43,11 @@ Para clonar y ejecutar esta aplicación, se necesitará [Git](https://git-scm.co
 Desde la línea de comando:
 1. Clonar el repositorio
     ```bash
-    git clone https://github.com/usuario/ms-quasar-op.git
+    git clone https://github.com/usuario/meli-test-sr-backend-dev.git
     ```
 2. Navegar al directorio del proyecto y clonar los subproyectos inicializando y actualizando git submodule
     ```bash
-    cd ms-quasar-op
+    cd meli-test-sr-backend-dev
     git submodule init
     git submodule update
     ```

@@ -70,7 +70,7 @@ Desde la línea de comando:
     docker compose -f "compose.yaml" up -d --build
     ```
 5. Importar la data inicial:
-    * Con MongoDB Compass conectarse a ```mongodb://localhost:27017/DBQuasarFireOp_DE``` 
+    * Con MongoDB Compass conectarse a ```mongodb://localhost:27017/DBQuasarFireOp_DE```  (La primera vez que inicia el contenedor de mongodb puede tardar un poco ya que se requiere replicaset para usar la capacidad de actualización dinámica del caché en el servicio)
 
     * Crear la DB ```DBQuasarFireOp_DE``` y las colecciones ```coll_satellite``` y ```coll_message```
 

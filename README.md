@@ -35,7 +35,7 @@ El microservicio incluye capacidades avanzadas de monitoreo y trazabilidad media
 Para mejorar el rendimiento, el microservicio implementa un manejo de caché en las colecciones de MongoDB, lo que permite reducir la latencia y mejorar la eficiencia en el acceso a los datos. También cuenta con un manejo centralizado de errores y el uso de interceptores para guardar la trazabilidad de las operaciones.
 
 ## **Pre-requisitos**
-Para clonar y ejecutar esta aplicación, se necesitará [Git](https://git-scm.com), [Java 17.0.11](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) y [Docker](https://docs.docker.com/engine/install/) instalados en la computadora.
+Para clonar y ejecutar esta aplicación, se necesitará [Git](https://git-scm.com), [Java 17.0.11](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html), [MongoDB Compass](https://www.mongodb.com/products/compass) y [Docker](https://docs.docker.com/engine/install/) instalados en la computadora.
 
 ## **Instalación y Ejecución**
 Desde la línea de comando:
@@ -85,9 +85,9 @@ Elastic APM se integra con Kibana para proporcionar monitoreo y trazabilidad de 
 
 ### **Procesamiento de Logs con Logstash desde Kibana**
 Logstash se utiliza para procesar y transformar los logs generados por el microservicio antes de enviarlos a Elasticsearch. Para visualizar los logs en Kibana:
-1. Abrir Kibana en el navegador web.
-2. Navegar a la sección "Discover" en el menú principal.
-3. Seleccionar el índice de logs configurado para Logstash.
+1. Abrir Kibana en el navegador web. [Click aquí.](http://localhost:5601/app/logs/stream)
+2. Click en la opción "Change source configuration".
+3. Incluir el índice de logs ```spring-boot-logs-*``` configurado para Logstash.
 4. Aquí se podrán buscar y analizar los logs generados por el microservicio.
 
 ### **Acceso a MongoDB desde MongoDB Compass**

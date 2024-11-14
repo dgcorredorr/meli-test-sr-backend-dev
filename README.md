@@ -14,18 +14,20 @@
 ![Swagger](https://img.shields.io/badge/-Swagger-%85EA2D?style=for-the-badge&logo=swagger&logoColor=white)&nbsp;
 
 ## **Contenido**
-- [Propósito del Proyecto](#propósito-del-proyecto)
-- [Pre-requisitos](#pre-requisitos)
-- [Instalación y Ejecución](#instalación-y-ejecución)
-- [Herramientas Principales](#herramientas-principales)
-    - [Uso de Swagger](#uso-de-swagger)
-    - [Monitoreo con Elastic APM desde Kibana](#monitoreo-con-elastic-apm-desde-kibana)
-    - [Procesamiento de Logs con Logstash desde Kibana](#procesamiento-de-logs-con-logstash-desde-kibana)
-    - [Acceso a MongoDB desde MongoDB Compass](#acceso-a-mongodb-desde-mongodb-compass)
-- [Diagramas de Arquitectura Modelo C4](#diagramas-de-arquitectura-modelo-c4)
-    - [Nivel 1: Diagrama de Contexto](#nivel-1-diagrama-de-contexto)
-    - [Nivel 2: Diagrama de Contenedores](#nivel-2-diagrama-de-contenedores)
-    - [Nivel 3: Diagrama de Componentes](#nivel-3-diagrama-de-componentes)
+- [**Operación Fuego de Quásar**](#operación-fuego-de-quásar)
+  - [**Contenido**](#contenido)
+  - [**Propósito del Proyecto**](#propósito-del-proyecto)
+  - [**Pre-requisitos**](#pre-requisitos)
+  - [**Instalación y Ejecución**](#instalación-y-ejecución)
+  - [**Herramientas Principales**](#herramientas-principales)
+    - [**Uso de Swagger**](#uso-de-swagger)
+    - [**Monitoreo con Elastic APM desde Kibana**](#monitoreo-con-elastic-apm-desde-kibana)
+    - [**Procesamiento de Logs con Logstash desde Kibana**](#procesamiento-de-logs-con-logstash-desde-kibana)
+    - [**Acceso a MongoDB desde MongoDB Compass**](#acceso-a-mongodb-desde-mongodb-compass)
+  - [**Diagramas de Arquitectura Modelo C4**](#diagramas-de-arquitectura-modelo-c4)
+    - [**Nivel 1: Diagrama de Contexto**](#nivel-1-diagrama-de-contexto)
+    - [**Nivel 2: Diagrama de Contenedores**](#nivel-2-diagrama-de-contenedores)
+    - [**Nivel 3: Diagrama de Componentes**](#nivel-3-diagrama-de-componentes)
 
 ## **Propósito del Proyecto**
 El microservicio "Operación Fuego de Quásar" es una solución desarrollada en Java utilizando el framework Spring Boot 3 y MongoDB como base de datos. Este microservicio se encarga de procesar y analizar la información recibida de varios satélites para determinar la posición y el mensaje original emitido por una fuente desconocida. Implementa un enfoque reactivo utilizando Spring WebFlux para manejar de manera eficiente las solicitudes concurrentes y proporcionar respuestas rápidas.
@@ -67,7 +69,18 @@ Desde la línea de comando:
     cd ms-quasar-fire-op
     docker compose -f "compose.yaml" up -d --build
     ```
-5. Correr la aplicación en modo desarrollo
+5. Importar la data inicial:
+    * Con MongoDB Compass conectarse a ```mongodb://localhost:27017/DBQuasarFireOp_DE``` 
+
+    * Crear la DB ```DBQuasarFireOp_DE``` y las colecciones ```coll_satellite``` y ```coll_message```
+
+    * Importar los archivos ```coll_satellite.json``` y ```coll_message.json``` en las respectivas colecciones, éstos se encuentran en la carpeta ```db-scripts``` del repositorio ```ms-quasar-fire-op```
+    <p align="center">
+      <span style="display:inline-block; width: 50px;"></span>
+      <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="400" /></a>
+    </p>
+
+6. Correr la aplicación en modo desarrollo
 
     ```bash
     ./mvnw clean spring-boot:run
@@ -75,13 +88,21 @@ Desde la línea de comando:
 ## **Herramientas Principales**
 ### **Uso de Swagger**
 Swagger se utiliza para documentar y probar los endpoints del microservicio. Una vez que la aplicación esté en ejecución, se puede acceder a la interfaz de Swagger haciendo click [aquí](http://localhost:8081)
-
+<p align="center">
+  <span style="display:inline-block; width: 50px;"></span>
+  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="400" /></a>
+</p>
 
 ### **Monitoreo con Elastic APM desde Kibana**
 Elastic APM se integra con Kibana para proporcionar monitoreo y trazabilidad de las operaciones del microservicio. Para acceder a los datos de APM desde Kibana:
-1. Abrir Kibana en el navegador web.
+1. Abrir Kibana en el navegador web. [Click aquí.](http://localhost:5601)
 2. Navegar a la sección "APM" en el menú principal.
 3. Aquí se podrán ver las métricas y trazas de las solicitudes manejadas por el microservicio.
+
+<p align="center">
+  <span style="display:inline-block; width: 50px;"></span>
+  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="600" alt="Rebel Alliance Logo" /></a>
+</p>
 
 ### **Procesamiento de Logs con Logstash desde Kibana**
 Logstash se utiliza para procesar y transformar los logs generados por el microservicio antes de enviarlos a Elasticsearch. Para visualizar los logs en Kibana:
@@ -90,11 +111,22 @@ Logstash se utiliza para procesar y transformar los logs generados por el micros
 3. Incluir el índice de logs ```spring-boot-logs-*``` configurado para Logstash.
 4. Aquí se podrán buscar y analizar los logs generados por el microservicio.
 
+<p align="center">
+  <span style="display:inline-block; width: 50px;"></span>
+  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="600" alt="Rebel Alliance Logo" /></a>
+</p>
+
 ### **Acceso a MongoDB desde MongoDB Compass**
 MongoDB Compass se utiliza para gestionar y visualizar los datos almacenados en MongoDB. Para conectarte a la base de datos:
 1. Abrir MongoDB Compass.
 2. Ingresar la URI de conexión de tu instancia de MongoDB (por ejemplo, `mongodb://localhost:27017`).
-3. Conectarse y navegar a través de las colecciones y documentos almacenados en la base de datos.
+3. Conectarse y navegar a través de las colecciones y documentos almacenados en la base de datos para realizar el respectivo soporte en haciendo uso de las colecciones ```coll_service_error``` y ```coll_traceability```.
+
+<p align="center">
+  <span style="display:inline-block; width: 50px;"></span>
+  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="600" alt="Rebel Alliance Logo" /></a>
+</p>
+
 ## **Diagramas de Arquitectura Modelo C4**
 ### **Nivel 1: Diagrama de Contexto**
 <p align="center">

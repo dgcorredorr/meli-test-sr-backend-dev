@@ -43,7 +43,7 @@ Para clonar y ejecutar esta aplicación, se necesitará [Git](https://git-scm.co
 Desde la línea de comando:
 1. Clonar el repositorio
     ```bash
-    git clone https://github.com/usuario/meli-test-sr-backend-dev.git
+    git clone https://github.com/dgcorredorr/meli-test-sr-backend-dev.git
     ```
 2. Navegar al directorio del proyecto y clonar los subproyectos inicializando y actualizando git submodule
     ```bash
@@ -140,18 +140,18 @@ MongoDB Compass se utiliza para gestionar y visualizar los datos almacenados en 
 ### **Nivel 1: Diagrama de Contexto**
 <p align="center">
   <span style="display:inline-block; width: 50px;"></span>
-  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Context%20Diagram.jpg" width="350" alt="Rebel Alliance Logo" /></a>
+  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Context%20Diagram.jpg" width="350" /></a>
 </p>
 
 ### **Nivel 2: Diagrama de Contenedores**
 Los elementos resaltados con borde rojo fueron los desarrollados y utilizados en este proyecto
 <p align="center">
   <span style="display:inline-block; width: 50px;"></span>
-  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="600" alt="Rebel Alliance Logo" /></a>
+  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Container%20Diagram.jpg" width="600" /></a>
 </p>
 
 ### **Nivel 3: Diagrama de Componentes**
 <p align="center">
   <span style="display:inline-block; width: 50px;"></span>
-  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Component%20Diagram.jpg" width="600" alt="Rebel Alliance Logo" /></a>
+  <a href="#" target="blank"><img src="diagramas/Diagramas%20de%20Arquitectura%20-%20Modelo%20C4%20-%20Component%20Diagram.jpg" width="600" /></a>
 </p>
